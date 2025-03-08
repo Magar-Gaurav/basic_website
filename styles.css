@@ -143,7 +143,7 @@ hr{
         margin: 5px;
         padding: 0;
         background-color: red;
-        width: 680px;
+        width: 100%;
     }
     .navbar1{
         flex-direction: column;
@@ -152,17 +152,26 @@ hr{
     .navbar1>img{
         height: 200px;
         width: 200px;
-        margin-left: 120px;
+        margin-left: 70px;
     }
     .navbar1>.name{
-        margin-left: 100px;
+        margin-left: -60px;
         width: 400px;
         display: flex;
     }
     .navbar2>ul{
-        margin-left: -450px;
-        font-size: 30px;
+        margin-left:-520px;
+        font-size: 28px;
         font-family: "Reenie Beanie", cursive;
+    }
+    .hero{
+        font-size: 20px;
+    }
+    .hero>h1{
+        margin-left: 40px;
+    }
+    .hero>p{
+        margin-left: 60px;
     }
     .bodi{
         font-size: 24px;
@@ -176,18 +185,19 @@ hr{
     }
     .footer1{
         flex-direction: column;
-        margin-left: -30px;
+        margin-left: -10px;
     }
     .footera{
-        width: 80%;
+        width: 70%;
         margin-top: 40px;
     }
 }
 @media (min-width:481px) and (max-width:765px) {
     body{
         background-color: blue;
-        width:800px;
-        margin: 5px;
+        width:100%;
+        margin: 5px 10px 5px 5px;
+        font-size: 28px;
     }
     .navbar1{
         flex-direction: column;
@@ -196,34 +206,48 @@ hr{
     .navbar1>img{
         height: 200px;
         width: 200px;
-        margin-left: 200px;
+        /* margin-left: 50px; */
+        margin-left: auto;
+        margin-right: auto;
     }
     .navbar1>.name{
-        margin-left: 140px;
-        width: 400px;
         display: flex;
+        align-items: center;
+        justify-content: center;
     }
     .navbar2>ul{
-        margin-left: -380px;
+        margin-left: -530px;
         font-size: 30px;
         font-family: "Reenie Beanie", cursive;
     }
-    .bodi{
-        font-size: 34px;
+    .hero>h1{
+        /* margin-left: 10px; */
+        font-size: 35px;
+        justify-items: center;
     }
+    .hero>p{
+        margin-left: 10px;
+    }
+    .bodi{
+        font-size: 20px;
+        width: 100%;
+    }
+
     .bodi>.education>ul{
         font-size: 20px;
         margin: 0 0 0 -50px;
     }
     .bodi>.experience>.experience2{
-        width: 350px;
+        width:200px;
+    }
+    .footer h1{
+        margin: 30px 0 0 30px;
     }
     .footer1{
         flex-direction: column;
-        margin-left: 10px;
     }
     .footera{
-        width: 80%;
+        width: 70%;
         margin-top: 40px;
     }
 }
@@ -275,22 +299,44 @@ hr{
 }
 @media (min-width:900px) {
     body{
-        width: 98%;
+        width: 100%;
         margin: 10px;
-        /* border: none; */
+    }
+    .navbar{
+        width: 100%;
     }
     .name{
         display: flex;
+        margin-top: 100px;
     }
     .navbar1>img{
         height: 200px;
         width: 200px;
+        margin-top: 100px;
     }
     .navbar2>ul{
-        padding: 0;
-        margin-left: 400px;
+        margin: 0;
+        padding:0;
+        margin-left: 100%;
     }
     .navbar2>ul>li{
         padding-left: 50px;
+    }
+    .hero{
+        width: 100%;
+    }
+    .bodi{
+        width: 100%;
+    }
+    .footer{
+        width: 100%;
+    }
+    .footer1{
+        flex-direction: column;
+        margin-left: 20px;
+    }
+    .footera{
+        width: 80%;
+        margin-top: 40px;
     }
 }
